@@ -117,7 +117,7 @@ arbre.
 #### Principe
 
 Un arbre dictionnaire est un arbre dans lequel les arêtes sont étiquetées par
-des lettres, et les nœuds sont doté d'un marqueur indiquant s'ils sont
+des lettres, et les nœuds sont dotés d'un marqueur indiquant s'ils sont
 terminaux ou non. Étant donné un mot, on débute la recherche à la racine. Pour
 chaque lettre du mot, on avance le long de l'arête portant cette lettre vers un
 enfant. La recherche se termine dès qu'il n'y a pas d'arête étiquetée avec la
