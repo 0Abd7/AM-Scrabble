@@ -317,8 +317,41 @@ mot possible en respectant les règles du Scrabble :
 
 ## Jeu de test
 
-Explications à venir
+Un robot du nom de Suzette a été mis en place [sur le canal de discussion de l'UE](https://chat-info.univ-lyon1.fr/group/lifap6)
+pour vous fournir les solutions calculées par la correction (en espérant qu'elle
+soit correcte). Pour l'interroger il faut utiliser la syntaxe :
+
+```
+suzette scrabble <plateau de jeu> <lettres du joueur>
+```
+
+Le plateau de jeu est à fournir dans le format accepté par la fonction `load` de
+la classe `Board` de ce projet.
 
 ## Bonus
 
-Explications à venir
+### Implémenter les jokers 
+
+Un joker peut remplacer n'importe quelle lettre. Une fois le joker posé, on
+identifie la lettre qu'il remplace, et il ne peut plus être utilisé par les
+nouveaux mots placés que comme cette lettre.
+
+### Implémenter un joueur pour une partie classique
+
+Il s'agit ici d'une question ouverte pour laquelle il n'y a pas de bonne
+méthode. Il faut être inventif. Le joueur qui joue le meilleur coup à chaque
+tour est un joueur glouton. En jouant de cette façon, il ne fait pas attention
+aux opportunités qu'il laisse à l'adversaire, et lui permet potentiellement de
+mettre beaucoup de points. Le but ici est de faire un joueur plus intéressant
+qui serait capable de ne pas jouer le meilleur coup s'il estime qu'un autre coup
+moins intéressant améliore ses chances pour la victoire finale. Une piste pour
+ce joueur consiste à utiliser une stratégie classique en IA : la [recherche
+arborescente
+Monte-Carlo](https://fr.wikipedia.org/wiki/Recherche_arborescente_Monte-Carlo).
+Pour simplifier, étant donné les lettres dans la main du joueur et celles sur le
+plateau, il est possible de lister les lettres restant à jouer. Ainsi, on peut
+simuler une fin de partie en considérant les deux joueurs comme des gloutons qui
+utilisent la stratégie du meilleur coup, et estimer pour chaque coup la
+probabilité de mener à une victoire. On se donne ainsi un budget de temps, et
+tant qu'on en a, on lance des parties aléatoires pour estimer la probabilité de
+succès d'un coup. 
