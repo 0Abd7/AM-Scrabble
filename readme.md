@@ -74,7 +74,7 @@ suivants :
 
 |      | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 |------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|Nombre| 6 | 6 | 2 | 3 | 6 | 6 | 6 | 6 | 2 | 1 | 1 | 1 | 1 |
+|Nombre| 6 | 6 | 2 | 1 | 6 | 6 | 6 | 6 | 2 | 1 | 1 | 1 | 1 |
 |Points| 1 | 1 | 3 | 8 | 1 | 1 | 1 | 1 | 4 | 10| 10| 10| 10|
 
 **Notez que pour l'instant, on ne traite pas les jokers qui pourront être
