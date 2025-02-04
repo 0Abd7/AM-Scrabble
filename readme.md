@@ -293,16 +293,7 @@ mot possible en respectant les règles du Scrabble :
 
 ## Jeu de test
 
-Un robot du nom de Suzette a été mis en place [sur le canal de discussion de l'UE](https://chat-info.univ-lyon1.fr/group/lifap6)
-pour vous fournir les solutions calculées par la correction (en espérant qu'elle
-soit correcte). Pour l'interroger il faut utiliser la syntaxe :
-
-```
-suzette scrabble <plateau de jeu> <lettres du joueur>
-```
-
-Le plateau de jeu est à fournir dans le format accepté par la fonction `load` de
-la classe `Board` de ce projet.
+En construction
 
 ## Bonus
 
