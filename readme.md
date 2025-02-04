@@ -27,34 +27,8 @@ fourni autant que vous le souhaitez pour correspondre à vos besoins. L'importan
 reste néanmoins que vous rendiez un travail qui soit compilable et lisible par
 votre encadrant.
 
-La compilation de ce dépôt se fait à l'aide de `premake`, qui vous permet de
-générer à la fois un Makefile, ou un projet codeblocks. Premake est déjà
-installé sur les machines en salles de TP, et des paquets sont disponibles pour
-la plupart des distributions linux. Pour générer des projets codeblocks, la
-version 4 est nécessaire [à télécharger
-ici](https://premake.github.io/download.html#v4) si elle n'est pas disponible
-sur votre système. Il est normalement également possible de générer des projets
-Visual Studio et Xcode.
-
-La configuration de Premake est réalisée dans le fichier `premake4.lua`. Vous y
-trouverez en commentaire comment ajouter de nouveaux fichiers à votre projet, et
-comment compiler de multiples exécutables.
-
-### Générer un Makefile (premake 4 ou 5)
-```
-premake4 gmake
-```
-
-Une fois le `Makefile` créé, utilisez make comme d'habitude pour lancer la
-compilation.
-
-### Générer un projet Codeblocks (premake 4 uniquement)
-```
-premake4 codeblocks
-```
-
-Une fois le projet généré, ouvrez le fichier `.workspace` dans Codeblocks, et
-vous pourrez travailler.
+La compilation se fait à l'aide du `Makefile` fourni dans le dossize src, ou via
+`cmake` selon vos préférences.
 
 ## Gestion du joueur
 
@@ -155,7 +129,7 @@ arêtes vers de nouveaux nœuds sont créées. Le dernier nœud créé est marqu
 terminal. Si toutes les arêtes existent, le nœud sur lequel on arrive est marqué
 comme terminal.
 
-![vidéo expliquant l'insertion dans un GADDAG](https://myvideo.univ-lyon1.fr/permalink/v12664831ff5fwariy1u/iframe/)
+![vidéo expliquant l'insertion dans un GADDAG](https://myvideo.univ-lyon1.fr/downloads/file/v12664831ff5fwariy1u/?url=media_720_8aPuJULbD7.mp4)
 
 
 
@@ -301,7 +275,7 @@ lettre `C` créait également le mot `CA` verticalement et que ce mot existait.
 Lorsque le curseur du plateau est sur une case vide, et que le curseur du Gaddag
 est sur un nœud terminal, vous avez trouvé un mot valide.
 
-![vidéo expliquant la recherche de meilleur coup au scrabble](https://myvideo.univ-lyon1.fr/permalink/v12664831ffb7w0kqkki/iframe/#start=3459)
+![vidéo expliquant la recherche de meilleur coup au scrabble](https://myvideo.univ-lyon1.fr/downloads/file/v12664831ffb7w0kqkki/?url=media_720_5SlDw5utsc.mp4)
 
 ## Trouver le meilleur coup
 
