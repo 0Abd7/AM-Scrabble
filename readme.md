@@ -155,7 +155,9 @@ arêtes vers de nouveaux nœuds sont créées. Le dernier nœud créé est marqu
 terminal. Si toutes les arêtes existent, le nœud sur lequel on arrive est marqué
 comme terminal.
 
-![vidéo expliquant l'insertion dans un GADDAG](https://mediacenter.univ-lyon1.fr/videos/MEDIA200401150530900/multimedia/MEDIA200401150530900.mp4)
+![vidéo expliquant l'insertion dans un GADDAG](https://myvideo.univ-lyon1.fr/permalink/v12664831ff5fwariy1u/iframe/)
+
+
 
 #### Recherche
 
@@ -299,7 +301,7 @@ lettre `C` créait également le mot `CA` verticalement et que ce mot existait.
 Lorsque le curseur du plateau est sur une case vide, et que le curseur du Gaddag
 est sur un nœud terminal, vous avez trouvé un mot valide.
 
-![vidéo expliquant la recherche de meilleur coup au scrabble](https://mediacenter.univ-lyon1.fr/videos/MEDIA200401190547202/multimedia/MEDIA200401190547202.mp4)
+![vidéo expliquant la recherche de meilleur coup au scrabble](https://myvideo.univ-lyon1.fr/permalink/v12664831ffb7w0kqkki/iframe/#start=3459)
 
 ## Trouver le meilleur coup
 
