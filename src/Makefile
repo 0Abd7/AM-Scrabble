@@ -1,4 +1,4 @@
-CXX      = g++
+cmakeCXX      = g++
 
 .DEFAULT_GOAL := all
 
@@ -20,7 +20,7 @@ TARGETS =
 
 ########## test_board ##########
 
-BOARD_SOURCES = test_board.cpp
+BOARD_SOURCES = test_board.cpp sac.cpp
 BOARD_OBJECTS = $(BOARD_SOURCES:.cpp=.o)
 
 test_board : $(BOARD_OBJECTS) $(OBJECTS) $(HEADERS)
