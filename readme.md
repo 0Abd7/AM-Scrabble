@@ -27,7 +27,7 @@ fourni autant que vous le souhaitez pour correspondre à vos besoins. L'importan
 reste néanmoins que vous rendiez un travail qui soit compilable et lisible par
 votre encadrant.
 
-La compilation se fait à l'aide du `Makefile` fourni dans le dossize src, ou via
+La compilation se fait à l'aide du `Makefile` fourni dans le dossier src, ou via
 `cmake` selon vos préférences.
 
 ## Gestion du joueur
@@ -59,7 +59,7 @@ ajoutés en bonus.**
 Créez une structure de données matérialisant le sac de lettres. Cette structures
 sera initialisée avec les lettres dans les quantités données ci-dessus. Cette
 structure devra permettre de pouvoir facilement piocher une lettre au hasard
-parmis les lettres restantes, c'est à dire que chaque lettre a une probabilité
+parmi les lettres restantes, c'est à dire que chaque lettre a une probabilité
 de tirage proportionnelle au nombre d'exemplaires restant dans le sac. 
 
 En terme de complexité, une structure bien réalisée devra permettre de piocher
@@ -68,10 +68,10 @@ une lettre en temps constant.
 ### Lettres du joueur
 
 Créez une structure de données pour matérialiser les lettre d'un joueur. Sauf
-quand il n'y en a plus dans le sac pur recharger, un joueur a toujours 7 lettres
-à sa disposition. Votre structure devra être adaptées à l'exploration que vous
+quand il n'y en a plus dans le sac pour recharger, un joueur a toujours 7 lettres
+à sa disposition. Votre structure devra être adaptée à l'exploration que vous
 ferez par la suite des mots qui sont jouable sur un plateau. Prévoyez également
-de pouvoir recharcger les lettres d'un joueur depuis le sac de lettres.
+de pouvoir recharger les lettres d'un joueur depuis le sac de lettres.
 
 ### Points des lettres
 
@@ -195,7 +195,7 @@ soit ajouté.
 
 Lorsqu'un nouveau mot est joué au scrabble, il doit nécessairement réutiliser
 au moins une lettre déjà présente sur le plateau. Le plus simple consiste à
-croier un mot existant comme dans l'exemple précédent :
+croiser un mot existant comme dans l'exemple précédent :
 
 ```
         B
