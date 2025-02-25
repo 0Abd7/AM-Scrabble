@@ -1,5 +1,6 @@
 #include "board.hpp"
 #include "sac.hpp"
+#include "gaddag.hpp"
 #include <iostream>
 #include <sstream>
 
@@ -16,6 +17,17 @@ int main() {
     cout << Sac.lettres[i];
   }
   std::cout<<endl;
+
+
+  Gaddag gaddag;
+
+    // Insérer des mots
+  gaddag.insertNoeud("ami");
+  gaddag.insertNoeud("arc");
+  gaddag.insertNoeud("art");
+  gaddag.insertNoeud("bateau");
+
+  return 0;
 /*  std::cout << b << std::endl ;
 
   std::stringstream ss ;
