@@ -6,6 +6,10 @@ SOURCES =
 SOURCES += bonus.cpp
 SOURCES += spot.cpp
 SOURCES += board.cpp
+SOURCES += gaddag.cpp
+SOURCES += joueur.cpp
+SOURCES += ScrabbleRech.cpp
+
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
