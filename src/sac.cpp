@@ -18,6 +18,8 @@ using namespace std;
         }
     }
 
+
+
     // Méthode pour générer des nombres aléatoires
     char Sac::alea(){
         std::uniform_int_distribution<int> uniform(0, lettres.size()-1); // Distribution uniforme entre 0 et N
@@ -29,7 +31,8 @@ using namespace std;
         return stock;
     }
 
-    int Sac::Score(char lettre){
+
+    int Sac::Score(char lettre)const{
         if (lettre >= 'A' && lettre <= 'Z')
             return points[lettre-'A'];
         else {
@@ -40,3 +43,11 @@ using namespace std;
             }
         }
     }
+
+    const std::map<char, int> Sac::lettrePoints = {
+        {'A', 1}, {'B', 3}, {'C', 3}, {'D', 2}, {'E', 1},
+        {'F', 4}, {'G', 2}, {'H', 4}, {'I', 1}, {'J', 8},
+        {'K', 10}, {'L', 1}, {'M', 2}, {'N', 1}, {'O', 1},
+        {'P', 3}, {'Q', 8}, {'R', 1}, {'S', 1}, {'T', 1},
+        {'U', 1}, {'V', 4}, {'W', 10}, {'X', 10}, {'Y', 10}, {'Z', 10}
+    };
